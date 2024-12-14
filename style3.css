@@ -1,0 +1,119 @@
+/* Apply retro Google font */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #FFD700; /* Golden text color */
+    text-align: center;  /* Center-align text */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/HeartsBG.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures body takes full height */
+    overflow: auto; /* Allows scrolling */
+}
+
+.content {
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 2px solid #FFD700; /* Golden border */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.6); /* Orange glow effect */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Larger gap between form elements */
+    max-height: 90vh; /* Limit content height to prevent overflowing */
+    overflow-y: auto; /* Allows vertical scrolling if needed */
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;  /* Center the title */
+    text-shadow: 3px 3px 5px #FF4500;  /* Retro text effect */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Larger gap between form elements */
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFD700;
+    text-shadow: 1px 1px 3px #FF4500; /* Retro text effect */
+    margin-bottom: 10px; /* Add margin for spacing between label and input */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #FFD700;
+    background-color: #1e1e1e;
+    color: #FFD700;
+    width: 100%;
+    margin-bottom: 15px; /* Added margin-bottom for space between inputs */
+}
+
+button {
+    background-color: #FFD700;
+    color: #000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px #FF4500; /* Retro text effect */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF4500;
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+input[type="text"]:focus, button:focus {
+    outline: none;
+    border: 2px solid #FF4500;
+}
+
+input[type="text"], button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="text"]:hover {
+    background-color: #333;
+}
+
+#popup {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+}
+
+#popup img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#popup p {
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: bold;
+}

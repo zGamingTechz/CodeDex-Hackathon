@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Still Interested?</title>
+    <link rel="stylesheet" href="style3.css"> <!-- Updated stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.gif" type="image/gif">
+</head>
+<body style="background-image: url(images/HeartsBG.jpg); background-size: cover; background-position: center center;">
+    <audio id="bg-music" loop muted>
+        <source src="music/Sad.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="bg-music2" loop muted>
+        <source src="music/Happy.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="content">
+        <h1>Girls Only! (I’m Straight, But Like, You Can Still Try)</h1>
+        
+        <!-- New yes/no question -->
+        <div id="queston" style="text-align: center;">
+            <label for="question0">Do you still think I'm cute enough to marry?</label>
+            <button type="button" id="yesBtn">Yes</button>
+            <button type="button" id="noBtn">No</button>
+        </div>
+        
+        <!-- Hidden popup for "No" answer -->
+        <div id="popup" style="display: none;">
+            <img src="images/Cat.jpg" alt="Crying Cat" width="200" />
+            <p>Please... don't say no! 😿</p>
+        </div>
+
+        <!-- Rest of the form -->
+        <form id="form" action="#" method="POST" style="display: none;">
+            <label for="question1">Would you still love me if I barely talked for 1 hour a day and spent the rest of the time in deep thought about spaghetti?</label>
+            <input type="text" id="question1" name="question1">
+            
+            <label for="question2">Would you still love me if I was a wet Cheeto with no flavor, or would you just toss me aside?</label>
+            <input type="text" id="question2" name="question2">
+            
+            <label for="question3">What cute nickname would you call me that would make everyone else jealous?</label>
+            <input type="text" id="question3" name="question3">
+            
+            <label for="question4">Can you handle my deep philosophical questions at 3 AM, like "What if tacos were round?"</label>
+            <input type="text" id="question4" name="question4">
+            
+            <label for="question5">What would be our signature dance move at weddings? (Please describe in detail.)</label>
+            <input type="text" id="question5" name="question5">
+            
+            <label for="question6">Do you promise to love me even when I steal the covers on cold nights and snore louder than a freight train?</label>
+            <input type="text" id="question6" name="question6">
+            
+            <label for="question7">If I said I wanted to build a blanket fort in the living room, would you help me or call me a child?</label>
+            <input type="text" id="question7" name="question7">
+
+            <label for="question8">If we were stuck on a deserted island, would you share your last slice of pizza with me, or would you eat it in front of me and laugh?</label>
+            <input type="text" id="question8" name="question8">
+            
+            <label for="question9">Would you still marry me if I could only communicate through memes and emoji for the rest of our lives?</label>
+            <input type="text" id="question9" name="question9">
+            
+            <label for="question10">How do you feel about wearing matching pajamas every day, even to work or school?</label>
+            <input type="text" id="question10" name="question10">
+            
+            <label for="question11">If we went to the zoo and I tried to pet every animal, would you be embarrassed or would you join in?</label>
+            <input type="text" id="question11" name="question11">
+            
+            <button type="submit">Submit Your Application</button>
+        </form>
+
+        <div id="thankYouPopup" style="display: none; justify-content: center; align-items: center;">
+            <img src="images/HappyCat.gif" alt="Happy Cat" width="200"/>
+            <p>Thank you for your answers! 😻 I love you too! You're amazing! Let's go build a blanket fort in the living room and talk about tacos! 🌮💖</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('yesBtn').onclick = function() {
+            // Hide the question and show the form
+            document.getElementById('form').style.display = 'block';
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('queston').style.display = 'none';
+
+            const audio = document.getElementById('bg-music');
+            window.addEventListener('click', () => {
+                audio.muted = true;  // Unmute the audio when clicked
+            });
+        };
+
+        document.getElementById('noBtn').onclick = function() {
+            // Show the popup with the crying cat image
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('form').style.display = 'none';
+
+            const audio = document.getElementById('bg-music');
+            audio.muted = false;  // Unmute the audio when clicked
+            audio.play();  // Start the audio
+        };
+        
+        document.querySelector("form").onsubmit = function(event) {
+            event.preventDefault(); // Prevent form submission (so the page doesn't reload)
+    
+            // Hide the form
+            document.getElementById('form').style.display = 'none';
+    
+            // Show the "Thank You" pop-up
+            document.getElementById('thankYouPopup').style.display = 'flex';
+
+            const audio = document.getElementById('bg-music2');
+            audio.muted = false;  // Unmute the audio when clicked
+            audio.play();  // Start the audio
+        };
+    </script>
+</body>
+</html>

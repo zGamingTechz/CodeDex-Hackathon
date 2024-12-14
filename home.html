@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Me Please ;-;</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Updated stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.gif" type="image/gif">
+</head>
+<body style="background-image: url(images/Front.jpg); background-size: cover; background-position: center center;">
+    <audio id="bg-music" loop muted>
+        <source src="music/Music2.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="content">
+        <h1>Why you should not marry me</h1>
+        <ul>
+            <li>I'm 6'1" – I can reach the top shelf without needing a ladder or a small child to stand on.</li>
+            <li>I'm smarter than a calculator, but I promise I won’t solve all your problems – that’s what Google is for.</li>
+            <li>I’m as quiet as a ninja – you’ll wonder if I’m there at all. Don’t worry though, I’m just processing deep thoughts... like "What’s for dinner?"</li>
+            <li>I’m the world’s best listener. You could talk about your sock collection for hours, and I’ll nod like it’s the most interesting thing ever.</li>
+            <li>Like a mystery novel – I’m full of plot twists. Spoiler alert: I still don’t know what I’m doing half the time.</li>
+            <li>When we argue, I’ll be the type to say, "You’re right, I’m wrong,” and then proceed to win the argument with a really well-timed meme. Love means never being wrong... and also always having memes on hand.</li>
+            <li>I’ll love you even if you steal the last fry. Just don’t make it a habit, or we might need relationship counseling.</li>
+        </ul>
+
+        <a href="contact.html" class="retro-button">Still Interested? Contact Me</a>
+    </div>
+
+    <script>
+        const audio = document.getElementById('bg-music');
+        window.addEventListener('click', () => {
+            audio.muted = false;  // Unmute the audio when clicked
+            audio.play();  // Start the audio
+        });
+    </script>
+</body>
+</html>
