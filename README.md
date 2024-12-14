@@ -37,6 +37,3 @@ An interactive and humorous web experience that uses animations, memes, and enga
 ## Contributing
 
 Feel free to fork the project, submit issues, or create pull requests. Contributions are always welcome!
-```
-
-This version is ready to be pasted into your `README.md`. Just replace the `your-username` placeholder in the repository URL with your actual GitHub username.
