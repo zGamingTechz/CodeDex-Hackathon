@@ -1,6 +1,3 @@
-Here’s the text you can copy-paste into your `README.md` file:
-
-```markdown
 # Marry Me Please ;-;
 
 An interactive and humorous web experience that uses animations, memes, and engaging visuals. The project features floating hearts, a quirky "Why You Should Not Marry Me" page, and an interactive form with memes, all while playing background music triggered by user clicks. Perfect for a lighthearted experience!
@@ -36,10 +33,6 @@ An interactive and humorous web experience that uses animations, memes, and enga
 - Ensuring audio plays correctly on different browsers.
 - Making the user interaction experience seamless across various devices.
 - Balancing humor with technical elements to create an engaging, fun project.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contributing
 
